@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mv-orchestration>
+  <mv-parameters>
+    <enable-email>N</enable-email>
+  </mv-parameters>
+  <mv-tasks>
+    <task active="true" name="InitialisationTask" order="1">
+      <class>com.midvision.rapiddeploy.orchestration.tasks.InitialisationTask</class>
+      <category>REQUIRED</category>
+      <resource type="useAntCompression">false</resource>
+      <resource type="filesetIncludes"/>
+      <resource type="filesetExcludes"/>
+      <resource type="checkTmpSize">true</resource>
+      <resource type="tmpSizeMultiplier">2</resource>
+      <resource type="cleanOnFail">true</resource>
+      <resource type="defaultUser"/>
+      <resource type="sourceVariables">true</resource>
+      <resource type="searchReplaceFilesetExcludes">**/*.jar,**/*.war,**/*.ear,**/*.deb,**/*.pkg,**/*.rar,**/*.rpm,**/*.tar,**/*.tar.gz,**/*.zip,**/*.gzip,**/*.7z,**/*.bin,**/*.dmg,**/*.iso,**/*.exe,**/*.msi,**/*.bar,**/*.cab,**/*.mpeg,**/*.mpg,**/*.jpeg,**/*.jpg,**/*.png,**/*.tif,**/*.gif,**/*.bmp</resource>
+    </task>
+    <task active="true" name="FinalisationTask" order="2">
+      <class>com.midvision.rapiddeploy.orchestration.tasks.FinalisationTask</class>
+      <category>REQUIRED</category>
+      <resource type="retainExpandedArchive">false</resource>
+    </task>
+  </mv-tasks>
+</mv-orchestration>
