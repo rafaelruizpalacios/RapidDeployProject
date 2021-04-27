@@ -17,7 +17,16 @@
       <resource type="sourceVariables">true</resource>
       <resource type="searchReplaceFilesetExcludes">**/*.jar,**/*.war,**/*.ear,**/*.deb,**/*.pkg,**/*.rar,**/*.rpm,**/*.tar,**/*.tar.gz,**/*.zip,**/*.gzip,**/*.7z,**/*.bin,**/*.dmg,**/*.iso,**/*.exe,**/*.msi,**/*.bar,**/*.cab,**/*.mpeg,**/*.mpg,**/*.jpeg,**/*.jpg,**/*.png,**/*.tif,**/*.gif,**/*.bmp</resource>
     </task>
-    <task active="true" name="FinalisationTask" order="2">
+    <task active="true" name="Sleep Task" order="2">
+      <class>com.midvision.rapiddeploy.orchestration.tasks.utils.SleepTask</class>
+      <category>IO</category>
+      <resource type="failOnError">true</resource>
+      <resource type="hours">0</resource>
+      <resource type="minutes">0</resource>
+      <resource type="seconds">2</resource>
+      <resource type="milliseconds">0</resource>
+    </task>
+    <task active="true" name="FinalisationTask" order="3">
       <class>com.midvision.rapiddeploy.orchestration.tasks.FinalisationTask</class>
       <category>REQUIRED</category>
       <resource type="retainExpandedArchive">false</resource>
