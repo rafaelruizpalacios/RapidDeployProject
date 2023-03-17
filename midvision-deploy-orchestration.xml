@@ -17,7 +17,16 @@
       <parameter name="sourceVariables">true</parameter>
       <parameter name="searchReplaceFilesetExcludes">**/*.jar,**/*.war,**/*.ear,**/*.deb,**/*.pkg,**/*.rar,**/*.rpm,**/*.tar,**/*.tar.gz,**/*.zip,**/*.gzip,**/*.7z,**/*.bin,**/*.dmg,**/*.iso,**/*.exe,**/*.msi,**/*.bar,**/*.cab,**/*.mpeg,**/*.mpg,**/*.jpeg,**/*.jpg,**/*.png,**/*.tif,**/*.gif,**/*.bmp</parameter>
     </task>
-    <task active="true" name="Git Repository Operations" order="2">
+    <task active="true" name="Echo Message" order="2">
+      <class>com.midvision.rapiddeploy.orchestration.tasks.utils.EchoTask</class>
+      <category>IO</category>
+      <parameter name="failOnError">true</parameter>
+      <parameter editionMode="text/plain" name="message"/>
+      <parameter name="level">info</parameter>
+      <parameter name="file"/>
+      <parameter name="append">true</parameter>
+    </task>
+    <task active="true" name="Git Repository Operations" order="3">
       <class>com.midvision.rapiddeploy.plugins.scm.gitmanual.task.RepositoryOperations</class>
       <category>Git</category>
       <parameter name="failOnError">true</parameter>
@@ -25,15 +34,15 @@
       <parameter name="branch">master</parameter>
       <parameter name="gitWorkingDirectory">/tmp/task/RapidDeployProject</parameter>
       <parameter name="gitUsername">rafaelruizpalacios@gmail.com</parameter>
-      <parameter name="gitPassword">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</parameter>
+      <parameter name="gitPassword">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</parameter>
       <parameter name="operation">commit</parameter>
       <parameter name="filePath"/>
-      <parameter name="commitComment">Git task commit</parameter>
+      <parameter name="commitComment">Another commit</parameter>
       <parameter name="retryCount">1</parameter>
       <parameter name="retryInterval">5000</parameter>
       <parameter name="outputParameter">${gitOutput}</parameter>
     </task>
-    <task active="true" name="FinalisationTask" order="3">
+    <task active="true" name="FinalisationTask" order="4">
       <class>com.midvision.rapiddeploy.orchestration.tasks.FinalisationTask</class>
       <category>REQUIRED</category>
       <parameter name="retainExpandedArchive">false</parameter>
