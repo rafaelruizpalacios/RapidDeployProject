@@ -21,7 +21,7 @@
       <class>com.midvision.rapiddeploy.orchestration.tasks.utils.EchoTask</class>
       <category>IO</category>
       <parameter name="failOnError">true</parameter>
-      <parameter editionMode="text/plain" name="message">This is a text in the message.</parameter>
+      <parameter editionMode="text/plain" name="message">@@echoMessage@@</parameter>
       <parameter name="level">info</parameter>
       <parameter name="file"/>
       <parameter name="append">true</parameter>
