@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><packageInfoList/>
+<?xml version="1.0" encoding="UTF-8"?><packageInfoList>
+    <packageInfo>
+        <projectName>GitTest</projectName>
+        <packageName>GitTest-0.0.1</packageName>
+        <archiveType>jar</archiveType>
+        <targetType/>
+        <targetReady>true</targetReady>
+        <lastJobId>1676</lastJobId>
+        <lastJobStatus>1</lastJobStatus>
+        <lastJobErrorMsg>-</lastJobErrorMsg>
+        <live>false</live>
+    </packageInfo>
+</packageInfoList>

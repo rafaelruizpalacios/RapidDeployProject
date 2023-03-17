@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><classpath>
     <classpathentry path="/Users/rafaelruizpalacios/mv_home_trunk/lib/rapiddeploy-orchestration.jar"/>
+    <classpathentry path="/Users/rafaelruizpalacios/mv_home_trunk/lib/rapiddeploy-core-plugins-tools-git.jar"/>
+    <classpathentry path="/Users/rafaelruizpalacios/mv_home_trunk/lib/rapiddeploy-remoting-jsch.jar"/>
 </classpath>

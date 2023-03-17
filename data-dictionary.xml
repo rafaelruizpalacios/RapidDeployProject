@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><dataDictionary>
     <project>GitTest</project>
+    <target>localhost.test.git</target>
     <entry>
         <key>@@echoMessage@@</key>
         <value/>
